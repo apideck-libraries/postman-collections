@@ -1,11 +1,11 @@
 {
     "item": [
         {
-            "id": "ab3dc9da-6f07-42b7-851e-9ad7e5cd1bc6",
+            "id": "6784ef46-bc76-4850-8e1a-6633eb9f2178",
             "name": "leads",
             "item": [
                 {
-                    "id": "39324cd2-5984-4f0c-9895-131e7f85ef7f",
+                    "id": "345c7fe4-fc09-478b-b59e-cbb8ceecfba5",
                     "name": "Create a lead",
                     "request": {
                         "name": "Create a lead",
@@ -43,7 +43,15 @@
                             }
                         ],
                         "method": "POST",
-                        "auth": null,
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "<Bearer Token>"
+                                }
+                            ]
+                        },
                         "body": {
                             "mode": "raw",
                             "raw": "{\n    \"name\": \"<string>\",\n    \"company_name\": \"<string>\",\n    \"prefix\": \"<string>\",\n    \"email\": \"<string>\",\n    \"title\": \"<string>\",\n    \"phone_number\": \"<string>\",\n    \"website\": \"<string>\",\n    \"status\": \"<string>\",\n    \"lead_source\": \"<string>\",\n    \"note\": \"<string>\",\n    \"address\": {\n        \"line1\": \"<string>\",\n        \"city\": \"<string>\",\n        \"line2\": \"<string>\",\n        \"state\": \"<string>\",\n        \"postal_code\": \"<string>\",\n        \"country\": \"<string>\"\n    },\n    \"custom_fields\": [\n        {\n            \"id\": \"<string>\",\n            \"value\": \"<string>\"\n        },\n        {\n            \"id\": \"<string>\",\n            \"value\": \"<string>\"\n        }\n    ],\n    \"tags\": [\n        \"<string>\",\n        \"<string>\"\n    ]\n}"
@@ -51,7 +59,7 @@
                     },
                     "response": [
                         {
-                            "id": "56550326-c86a-4cfb-aa1f-bb9c81a9e717",
+                            "id": "108dd632-c638-471c-90c0-7ffd004f08e7",
                             "name": "Resource created",
                             "originalRequest": {
                                 "url": {
@@ -108,7 +116,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "6b08ba2e-a4a2-40df-8e98-277f285e06d4",
+                            "id": "5481430d-1d54-4c11-9f80-5bdb7ac95883",
                             "name": "Invalid input",
                             "originalRequest": {
                                 "url": {
@@ -165,7 +173,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "94042fa1-0347-453f-97ef-7a5c2cc94d67",
+                            "id": "0d8fa443-f95e-49ce-8d0f-a4e1bcadcd99",
                             "name": "Duplicate resource",
                             "originalRequest": {
                                 "url": {
@@ -222,7 +230,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "69caab46-39e4-4b33-a323-28c70d2b3570",
+                            "id": "cd9fbb2a-5b17-4d19-b574-84513acf198c",
                             "name": "Unprocessable Entity",
                             "originalRequest": {
                                 "url": {
@@ -282,7 +290,7 @@
                     "event": []
                 },
                 {
-                    "id": "29285303-a9c7-415b-ac79-7cfbc6aa689c",
+                    "id": "8a34b93a-1e9e-4cfb-91ef-033eca62a46e",
                     "name": "Get all leads",
                     "request": {
                         "name": "Get all leads",
@@ -338,7 +346,7 @@
                     },
                     "response": [
                         {
-                            "id": "ce123754-6550-4543-bc49-98dad1c2e3c0",
+                            "id": "9ad6ad78-0825-4338-8013-c452b68e2ce0",
                             "name": "ok",
                             "originalRequest": {
                                 "url": {
@@ -395,7 +403,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n {\n  \"name\": \"anim do nisi reprehenderit\",\n  \"first_name\": \"dolor ut cillum dolore\",\n  \"last_name\": \"Lorem esse proident\",\n  \"prefix\": \"ea labo\",\n  \"email\": \"deserunt\",\n  \"title\": \"proident deserunt\",\n  \"phone_number\": \"eiusmod non commodo\",\n  \"website\": \"est amet\",\n  \"company_name\": \"ea nulla dolor\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"dolor aute in\",\n  \"first_name\": \"labor\",\n  \"last_name\": \"sed culpa\",\n  \"prefix\": \"commodo proident in\",\n  \"email\": \"ipsum do in ad\",\n  \"title\": \"nostrud ullamco\",\n  \"phone_number\": \"mollit est u\",\n  \"website\": \"Duis sit tempor\",\n  \"company_name\": \"Ut\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
+                            "body": "[\n {\n  \"name\": \"deserunt nulla cillum minim\",\n  \"first_name\": \"eiusmod\",\n  \"last_name\": \"minim\",\n  \"prefix\": \"dolor ad qui\",\n  \"email\": \"in do\",\n  \"title\": \"dolor\",\n  \"phone_number\": \"ex irure\",\n  \"website\": \"magna cill\",\n  \"company_name\": \"deserunt aliqua dolor\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"sunt nostrud\",\n  \"first_name\": \"culpa\",\n  \"last_name\": \"velit occaecat pariatur exercitation\",\n  \"prefix\": \"sint aute sunt mollit cillum\",\n  \"email\": \"in\",\n  \"title\": \"cupidatat ad tempor\",\n  \"phone_number\": \"deserunt tempor ullamco Lorem\",\n  \"website\": \"magna reprehenderit voluptate cupidatat\",\n  \"company_name\": \"proident elit do anim magna\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -403,11 +411,11 @@
                     "event": []
                 },
                 {
-                    "id": "b102e89f-19ec-4134-b90f-0e1f3639fa7a",
+                    "id": "cbb397d7-bc1f-4f11-bf3b-87a666ce8784",
                     "name": "{id}",
                     "item": [
                         {
-                            "id": "508d92fe-7d09-4655-ae79-ff6b8c34e9ac",
+                            "id": "24658410-2c78-471e-851f-23d67abd7528",
                             "name": "Get lead",
                             "request": {
                                 "name": "Get lead",
@@ -449,11 +457,19 @@
                                     }
                                 ],
                                 "method": "GET",
-                                "auth": null
+                                "auth": {
+                                    "type": "bearer",
+                                    "bearer": [
+                                        {
+                                            "key": "token",
+                                            "value": "<Bearer Token>"
+                                        }
+                                    ]
+                                }
                             },
                             "response": [
                                 {
-                                    "id": "eabdfe43-0e1f-4eeb-b29c-8d82a113e097",
+                                    "id": "bb4759a3-1cb5-41ad-8fbe-b11280f0cca9",
                                     "name": "ok",
                                     "originalRequest": {
                                         "url": {
@@ -508,7 +524,7 @@
                                             "value": "application/json"
                                         }
                                     ],
-                                    "body": "[\n {\n  \"name\": \"anim do nisi reprehenderit\",\n  \"first_name\": \"dolor ut cillum dolore\",\n  \"last_name\": \"Lorem esse proident\",\n  \"prefix\": \"ea labo\",\n  \"email\": \"deserunt\",\n  \"title\": \"proident deserunt\",\n  \"phone_number\": \"eiusmod non commodo\",\n  \"website\": \"est amet\",\n  \"company_name\": \"ea nulla dolor\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"dolor aute in\",\n  \"first_name\": \"labor\",\n  \"last_name\": \"sed culpa\",\n  \"prefix\": \"commodo proident in\",\n  \"email\": \"ipsum do in ad\",\n  \"title\": \"nostrud ullamco\",\n  \"phone_number\": \"mollit est u\",\n  \"website\": \"Duis sit tempor\",\n  \"company_name\": \"Ut\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
+                                    "body": "[\n {\n  \"name\": \"deserunt nulla cillum minim\",\n  \"first_name\": \"eiusmod\",\n  \"last_name\": \"minim\",\n  \"prefix\": \"dolor ad qui\",\n  \"email\": \"in do\",\n  \"title\": \"dolor\",\n  \"phone_number\": \"ex irure\",\n  \"website\": \"magna cill\",\n  \"company_name\": \"deserunt aliqua dolor\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"sunt nostrud\",\n  \"first_name\": \"culpa\",\n  \"last_name\": \"velit occaecat pariatur exercitation\",\n  \"prefix\": \"sint aute sunt mollit cillum\",\n  \"email\": \"in\",\n  \"title\": \"cupidatat ad tempor\",\n  \"phone_number\": \"deserunt tempor ullamco Lorem\",\n  \"website\": \"magna reprehenderit voluptate cupidatat\",\n  \"company_name\": \"proident elit do anim magna\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
                                     "cookie": [],
                                     "_postman_previewlanguage": "json"
                                 }
@@ -516,7 +532,7 @@
                             "event": []
                         },
                         {
-                            "id": "a4376e18-3eb3-44a5-94e9-8478d710feac",
+                            "id": "f0815c41-33f6-4a68-8c24-4b7e8ab20bf2",
                             "name": "Update lead",
                             "request": {
                                 "name": "Update lead",
@@ -562,7 +578,15 @@
                                     }
                                 ],
                                 "method": "PATCH",
-                                "auth": null,
+                                "auth": {
+                                    "type": "bearer",
+                                    "bearer": [
+                                        {
+                                            "key": "token",
+                                            "value": "<Bearer Token>"
+                                        }
+                                    ]
+                                },
                                 "body": {
                                     "mode": "raw",
                                     "raw": "{\n    \"name\": \"<string>\",\n    \"company_name\": \"<string>\",\n    \"prefix\": \"<string>\",\n    \"email\": \"<string>\",\n    \"title\": \"<string>\",\n    \"phone_number\": \"<string>\",\n    \"website\": \"<string>\",\n    \"status\": \"<string>\",\n    \"lead_source\": \"<string>\",\n    \"note\": \"<string>\",\n    \"address\": {\n        \"line1\": \"<string>\",\n        \"city\": \"<string>\",\n        \"line2\": \"<string>\",\n        \"state\": \"<string>\",\n        \"postal_code\": \"<string>\",\n        \"country\": \"<string>\"\n    },\n    \"custom_fields\": [\n        {\n            \"id\": \"<string>\",\n            \"value\": \"<string>\"\n        },\n        {\n            \"id\": \"<string>\",\n            \"value\": \"<string>\"\n        }\n    ],\n    \"tags\": [\n        \"<string>\",\n        \"<string>\"\n    ]\n}"
@@ -570,7 +594,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "ddd0cb95-26fc-4cc5-9bf4-c02746d6293b",
+                                    "id": "aff27856-ec36-4427-b213-247a2f3f12a1",
                                     "name": "ok",
                                     "originalRequest": {
                                         "url": {
@@ -628,7 +652,7 @@
                                             "value": "application/json"
                                         }
                                     ],
-                                    "body": "[\n {\n  \"name\": \"anim do nisi reprehenderit\",\n  \"first_name\": \"dolor ut cillum dolore\",\n  \"last_name\": \"Lorem esse proident\",\n  \"prefix\": \"ea labo\",\n  \"email\": \"deserunt\",\n  \"title\": \"proident deserunt\",\n  \"phone_number\": \"eiusmod non commodo\",\n  \"website\": \"est amet\",\n  \"company_name\": \"ea nulla dolor\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"dolor aute in\",\n  \"first_name\": \"labor\",\n  \"last_name\": \"sed culpa\",\n  \"prefix\": \"commodo proident in\",\n  \"email\": \"ipsum do in ad\",\n  \"title\": \"nostrud ullamco\",\n  \"phone_number\": \"mollit est u\",\n  \"website\": \"Duis sit tempor\",\n  \"company_name\": \"Ut\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
+                                    "body": "[\n {\n  \"name\": \"deserunt nulla cillum minim\",\n  \"first_name\": \"eiusmod\",\n  \"last_name\": \"minim\",\n  \"prefix\": \"dolor ad qui\",\n  \"email\": \"in do\",\n  \"title\": \"dolor\",\n  \"phone_number\": \"ex irure\",\n  \"website\": \"magna cill\",\n  \"company_name\": \"deserunt aliqua dolor\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"sunt nostrud\",\n  \"first_name\": \"culpa\",\n  \"last_name\": \"velit occaecat pariatur exercitation\",\n  \"prefix\": \"sint aute sunt mollit cillum\",\n  \"email\": \"in\",\n  \"title\": \"cupidatat ad tempor\",\n  \"phone_number\": \"deserunt tempor ullamco Lorem\",\n  \"website\": \"magna reprehenderit voluptate cupidatat\",\n  \"company_name\": \"proident elit do anim magna\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
                                     "cookie": [],
                                     "_postman_previewlanguage": "json"
                                 }
@@ -636,7 +660,7 @@
                             "event": []
                         },
                         {
-                            "id": "7c679400-b53c-42d9-85fc-6f5a655a1c56",
+                            "id": "881d2370-7732-43bd-ac14-160017854a8e",
                             "name": "Deletes a lead",
                             "request": {
                                 "name": "Deletes a lead",
@@ -678,11 +702,19 @@
                                     }
                                 ],
                                 "method": "DELETE",
-                                "auth": null
+                                "auth": {
+                                    "type": "bearer",
+                                    "bearer": [
+                                        {
+                                            "key": "token",
+                                            "value": "<Bearer Token>"
+                                        }
+                                    ]
+                                }
                             },
                             "response": [
                                 {
-                                    "id": "fecbd1be-c49e-48a3-8c19-7c4e3b4c2826",
+                                    "id": "ba0dc34f-5bc9-46e4-b8f2-69f386f5f086",
                                     "name": "Resource succesfully deleted",
                                     "originalRequest": {
                                         "url": {
@@ -742,7 +774,7 @@
                                     "_postman_previewlanguage": "text"
                                 },
                                 {
-                                    "id": "dfd66b2b-163d-4a41-8e3e-bc5da473547d",
+                                    "id": "8a32637c-d8bf-4f2a-877f-f2b71d896311",
                                     "name": "Invalid ID supplied.",
                                     "originalRequest": {
                                         "url": {
@@ -802,7 +834,7 @@
                                     "_postman_previewlanguage": "text"
                                 },
                                 {
-                                    "id": "d178b294-b775-4009-8f6a-d7bb4ee6023e",
+                                    "id": "4d93c280-c26e-4e2d-a0b5-38d947612bf6",
                                     "name": "Entity not found.",
                                     "originalRequest": {
                                         "url": {
@@ -865,7 +897,7 @@
                             "event": []
                         },
                         {
-                            "id": "f060dc5a-1269-4eb6-adad-3b16148141c4",
+                            "id": "c3ae5d48-1231-4a73-ae12-a55de81d5d36",
                             "name": "Get lead schema",
                             "request": {
                                 "name": "Get lead schema",
@@ -902,11 +934,19 @@
                                     }
                                 ],
                                 "method": "GET",
-                                "auth": null
+                                "auth": {
+                                    "type": "bearer",
+                                    "bearer": [
+                                        {
+                                            "key": "token",
+                                            "value": "<Bearer Token>"
+                                        }
+                                    ]
+                                }
                             },
                             "response": [
                                 {
-                                    "id": "9faab3d9-f0f8-4324-9039-070d0c7b17b1",
+                                    "id": "9501b1ab-725a-4483-8e23-e28f0599a5f3",
                                     "name": "ok",
                                     "originalRequest": {
                                         "url": {
@@ -957,7 +997,7 @@
                                             "value": "application/json"
                                         }
                                     ],
-                                    "body": "{\n \"data\": [\n  {\n   \"id\": \"in est fugiat voluptate\",\n   \"label\": \"ut ea veniam\",\n   \"custom\": true,\n   \"required\": false\n  },\n  {\n   \"id\": \"proident sit\",\n   \"label\": \"do irure deserunt\",\n   \"custom\": false,\n   \"required\": false\n  }\n ]\n}",
+                                    "body": "{\n \"data\": [\n  {\n   \"id\": \"quis pariatur Excepteur\",\n   \"label\": \"esse quis\",\n   \"custom\": true,\n   \"required\": false\n  },\n  {\n   \"id\": \"quis aliqua\",\n   \"label\": \"Duis sunt eiusmod\",\n   \"custom\": false,\n   \"required\": true\n  }\n ]\n}",
                                     "cookie": [],
                                     "_postman_previewlanguage": "json"
                                 }
@@ -989,7 +1029,7 @@
         ]
     },
     "info": {
-        "_postman_id": "13efb70c-cd42-4085-b7ec-255770e9918f",
+        "_postman_id": "1f54f633-d838-4758-9c59-648eb1625463",
         "name": "Lead API",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {
