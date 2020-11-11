@@ -1,11 +1,11 @@
 {
     "item": [
         {
-            "id": "859618da-bcde-461f-b442-80fee20cc131",
+            "id": "ab3dc9da-6f07-42b7-851e-9ad7e5cd1bc6",
             "name": "leads",
             "item": [
                 {
-                    "id": "20976dab-a042-4792-9f40-a95898b7018a",
+                    "id": "39324cd2-5984-4f0c-9895-131e7f85ef7f",
                     "name": "Create a lead",
                     "request": {
                         "name": "Create a lead",
@@ -21,7 +21,7 @@
                                 {
                                     "description": "Include raw response. Mostly used for debugging purposes",
                                     "key": "raw",
-                                    "value": "<boolean>"
+                                    "value": "true"
                                 }
                             ],
                             "variable": []
@@ -51,7 +51,7 @@
                     },
                     "response": [
                         {
-                            "id": "ca6f7482-5755-44d1-9d81-d74eadd15383",
+                            "id": "56550326-c86a-4cfb-aa1f-bb9c81a9e717",
                             "name": "Resource created",
                             "originalRequest": {
                                 "url": {
@@ -64,12 +64,20 @@
                                     "query": [
                                         {
                                             "key": "raw",
-                                            "value": "<boolean>"
+                                            "value": "true"
                                         }
                                     ],
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "description": {
+                                            "content": "Added as a part of security scheme: bearer",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "Bearer <token>"
+                                    },
                                     {
                                         "description": "(Required) ID of the consumer which you want to get or push data from",
                                         "key": "x-apideck-consumer-id",
@@ -100,7 +108,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "d433b52a-9166-4380-ba56-8df23cc5f902",
+                            "id": "6b08ba2e-a4a2-40df-8e98-277f285e06d4",
                             "name": "Invalid input",
                             "originalRequest": {
                                 "url": {
@@ -113,12 +121,20 @@
                                     "query": [
                                         {
                                             "key": "raw",
-                                            "value": "<boolean>"
+                                            "value": "true"
                                         }
                                     ],
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "description": {
+                                            "content": "Added as a part of security scheme: bearer",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "Bearer <token>"
+                                    },
                                     {
                                         "description": "(Required) ID of the consumer which you want to get or push data from",
                                         "key": "x-apideck-consumer-id",
@@ -149,7 +165,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "eb61e477-6646-4761-b6c0-54705af07308",
+                            "id": "94042fa1-0347-453f-97ef-7a5c2cc94d67",
                             "name": "Duplicate resource",
                             "originalRequest": {
                                 "url": {
@@ -162,12 +178,20 @@
                                     "query": [
                                         {
                                             "key": "raw",
-                                            "value": "<boolean>"
+                                            "value": "true"
                                         }
                                     ],
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "description": {
+                                            "content": "Added as a part of security scheme: bearer",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "Bearer <token>"
+                                    },
                                     {
                                         "description": "(Required) ID of the consumer which you want to get or push data from",
                                         "key": "x-apideck-consumer-id",
@@ -198,7 +222,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "93bc3971-a8c4-433e-8312-aaa9e721b4b0",
+                            "id": "69caab46-39e4-4b33-a323-28c70d2b3570",
                             "name": "Unprocessable Entity",
                             "originalRequest": {
                                 "url": {
@@ -211,12 +235,20 @@
                                     "query": [
                                         {
                                             "key": "raw",
-                                            "value": "<boolean>"
+                                            "value": "true"
                                         }
                                     ],
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "description": {
+                                            "content": "Added as a part of security scheme: bearer",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "Bearer <token>"
+                                    },
                                     {
                                         "description": "(Required) ID of the consumer which you want to get or push data from",
                                         "key": "x-apideck-consumer-id",
@@ -250,7 +282,7 @@
                     "event": []
                 },
                 {
-                    "id": "c701c9d3-8ac8-4937-979d-2c1184e9f238",
+                    "id": "29285303-a9c7-415b-ac79-7cfbc6aa689c",
                     "name": "Get all leads",
                     "request": {
                         "name": "Get all leads",
@@ -266,17 +298,17 @@
                                 {
                                     "description": "Include raw response. Mostly used for debugging purposes",
                                     "key": "raw",
-                                    "value": "<boolean>"
+                                    "value": "true"
                                 },
                                 {
                                     "description": "Page number to start from. Omitting the page parameter will return page 1",
                                     "key": "page",
-                                    "value": "<integer>"
+                                    "value": "1"
                                 },
                                 {
                                     "description": "Number of records to return per page. Default = 100.",
                                     "key": "per_page",
-                                    "value": "<integer>"
+                                    "value": "100"
                                 }
                             ],
                             "variable": []
@@ -294,11 +326,19 @@
                             }
                         ],
                         "method": "GET",
-                        "auth": null
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "<Bearer Token>"
+                                }
+                            ]
+                        }
                     },
                     "response": [
                         {
-                            "id": "5d4f4b18-b6f3-470d-a6d8-924011264c5f",
+                            "id": "ce123754-6550-4543-bc49-98dad1c2e3c0",
                             "name": "ok",
                             "originalRequest": {
                                 "url": {
@@ -311,20 +351,28 @@
                                     "query": [
                                         {
                                             "key": "raw",
-                                            "value": "<boolean>"
+                                            "value": "true"
                                         },
                                         {
                                             "key": "page",
-                                            "value": "<integer>"
+                                            "value": "1"
                                         },
                                         {
                                             "key": "per_page",
-                                            "value": "<integer>"
+                                            "value": "100"
                                         }
                                     ],
                                     "variable": []
                                 },
                                 "header": [
+                                    {
+                                        "description": {
+                                            "content": "Added as a part of security scheme: bearer",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "Bearer <token>"
+                                    },
                                     {
                                         "description": "(Required) ID of the consumer which you want to get or push data from",
                                         "key": "x-apideck-consumer-id",
@@ -347,7 +395,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n {\n  \"name\": \"et sit\",\n  \"first_name\": \"in fu\",\n  \"last_name\": \"Excepteur et est\",\n  \"prefix\": \"consectetur enim cillum\",\n  \"email\": \"sed s\",\n  \"title\": \"esse ullamco dolor anim\",\n  \"phone_number\": \"nulla qui amet aliqua\",\n  \"website\": \"ut eu nostrud Lorem\",\n  \"company_name\": \"sint tempor eu magna consequat\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"deserunt in\",\n  \"first_name\": \"id nulla et Duis magna\",\n  \"last_name\": \"in mollit Excepteur cillum nulla\",\n  \"prefix\": \"ea in \",\n  \"email\": \"qui\",\n  \"title\": \"eu magna nulla Excepteur\",\n  \"phone_number\": \"et cupidatat in\",\n  \"website\": \"enim commodo ut\",\n  \"company_name\": \"pariatur occaecat mollit in\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
+                            "body": "[\n {\n  \"name\": \"anim do nisi reprehenderit\",\n  \"first_name\": \"dolor ut cillum dolore\",\n  \"last_name\": \"Lorem esse proident\",\n  \"prefix\": \"ea labo\",\n  \"email\": \"deserunt\",\n  \"title\": \"proident deserunt\",\n  \"phone_number\": \"eiusmod non commodo\",\n  \"website\": \"est amet\",\n  \"company_name\": \"ea nulla dolor\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"dolor aute in\",\n  \"first_name\": \"labor\",\n  \"last_name\": \"sed culpa\",\n  \"prefix\": \"commodo proident in\",\n  \"email\": \"ipsum do in ad\",\n  \"title\": \"nostrud ullamco\",\n  \"phone_number\": \"mollit est u\",\n  \"website\": \"Duis sit tempor\",\n  \"company_name\": \"Ut\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -355,11 +403,11 @@
                     "event": []
                 },
                 {
-                    "id": "d2c7f971-2b2c-4dad-8e8d-d6716cce0503",
+                    "id": "b102e89f-19ec-4134-b90f-0e1f3639fa7a",
                     "name": "{id}",
                     "item": [
                         {
-                            "id": "c8e611b5-ce94-4853-b265-60ebc584b2fb",
+                            "id": "508d92fe-7d09-4655-ae79-ff6b8c34e9ac",
                             "name": "Get lead",
                             "request": {
                                 "name": "Get lead",
@@ -376,7 +424,7 @@
                                         {
                                             "description": "Include raw response. Mostly used for debugging purposes",
                                             "key": "raw",
-                                            "value": "<boolean>"
+                                            "value": "true"
                                         }
                                     ],
                                     "variable": [
@@ -405,7 +453,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "78c8812e-9854-4372-ad8c-a8ac73e4ab9e",
+                                    "id": "eabdfe43-0e1f-4eeb-b29c-8d82a113e097",
                                     "name": "ok",
                                     "originalRequest": {
                                         "url": {
@@ -419,7 +467,7 @@
                                             "query": [
                                                 {
                                                     "key": "raw",
-                                                    "value": "<boolean>"
+                                                    "value": "true"
                                                 }
                                             ],
                                             "variable": [
@@ -430,6 +478,14 @@
                                             ]
                                         },
                                         "header": [
+                                            {
+                                                "description": {
+                                                    "content": "Added as a part of security scheme: bearer",
+                                                    "type": "text/plain"
+                                                },
+                                                "key": "Authorization",
+                                                "value": "Bearer <token>"
+                                            },
                                             {
                                                 "description": "(Required) ID of the consumer which you want to get or push data from",
                                                 "key": "x-apideck-consumer-id",
@@ -452,7 +508,7 @@
                                             "value": "application/json"
                                         }
                                     ],
-                                    "body": "[\n {\n  \"name\": \"et sit\",\n  \"first_name\": \"in fu\",\n  \"last_name\": \"Excepteur et est\",\n  \"prefix\": \"consectetur enim cillum\",\n  \"email\": \"sed s\",\n  \"title\": \"esse ullamco dolor anim\",\n  \"phone_number\": \"nulla qui amet aliqua\",\n  \"website\": \"ut eu nostrud Lorem\",\n  \"company_name\": \"sint tempor eu magna consequat\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"deserunt in\",\n  \"first_name\": \"id nulla et Duis magna\",\n  \"last_name\": \"in mollit Excepteur cillum nulla\",\n  \"prefix\": \"ea in \",\n  \"email\": \"qui\",\n  \"title\": \"eu magna nulla Excepteur\",\n  \"phone_number\": \"et cupidatat in\",\n  \"website\": \"enim commodo ut\",\n  \"company_name\": \"pariatur occaecat mollit in\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
+                                    "body": "[\n {\n  \"name\": \"anim do nisi reprehenderit\",\n  \"first_name\": \"dolor ut cillum dolore\",\n  \"last_name\": \"Lorem esse proident\",\n  \"prefix\": \"ea labo\",\n  \"email\": \"deserunt\",\n  \"title\": \"proident deserunt\",\n  \"phone_number\": \"eiusmod non commodo\",\n  \"website\": \"est amet\",\n  \"company_name\": \"ea nulla dolor\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"dolor aute in\",\n  \"first_name\": \"labor\",\n  \"last_name\": \"sed culpa\",\n  \"prefix\": \"commodo proident in\",\n  \"email\": \"ipsum do in ad\",\n  \"title\": \"nostrud ullamco\",\n  \"phone_number\": \"mollit est u\",\n  \"website\": \"Duis sit tempor\",\n  \"company_name\": \"Ut\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
                                     "cookie": [],
                                     "_postman_previewlanguage": "json"
                                 }
@@ -460,7 +516,7 @@
                             "event": []
                         },
                         {
-                            "id": "705c81ec-b2eb-4b94-836d-7ce717055b9f",
+                            "id": "a4376e18-3eb3-44a5-94e9-8478d710feac",
                             "name": "Update lead",
                             "request": {
                                 "name": "Update lead",
@@ -477,7 +533,7 @@
                                         {
                                             "description": "Include raw response. Mostly used for debugging purposes",
                                             "key": "raw",
-                                            "value": "<boolean>"
+                                            "value": "true"
                                         }
                                     ],
                                     "variable": [
@@ -514,7 +570,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "bbb2dd6a-0f69-4ed0-af5e-ff117c5c0fd1",
+                                    "id": "ddd0cb95-26fc-4cc5-9bf4-c02746d6293b",
                                     "name": "ok",
                                     "originalRequest": {
                                         "url": {
@@ -528,7 +584,7 @@
                                             "query": [
                                                 {
                                                     "key": "raw",
-                                                    "value": "<boolean>"
+                                                    "value": "true"
                                                 }
                                             ],
                                             "variable": [
@@ -539,6 +595,14 @@
                                             ]
                                         },
                                         "header": [
+                                            {
+                                                "description": {
+                                                    "content": "Added as a part of security scheme: bearer",
+                                                    "type": "text/plain"
+                                                },
+                                                "key": "Authorization",
+                                                "value": "Bearer <token>"
+                                            },
                                             {
                                                 "description": "(Required) ID of the consumer which you want to get or push data from",
                                                 "key": "x-apideck-consumer-id",
@@ -564,7 +628,7 @@
                                             "value": "application/json"
                                         }
                                     ],
-                                    "body": "[\n {\n  \"name\": \"et sit\",\n  \"first_name\": \"in fu\",\n  \"last_name\": \"Excepteur et est\",\n  \"prefix\": \"consectetur enim cillum\",\n  \"email\": \"sed s\",\n  \"title\": \"esse ullamco dolor anim\",\n  \"phone_number\": \"nulla qui amet aliqua\",\n  \"website\": \"ut eu nostrud Lorem\",\n  \"company_name\": \"sint tempor eu magna consequat\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"deserunt in\",\n  \"first_name\": \"id nulla et Duis magna\",\n  \"last_name\": \"in mollit Excepteur cillum nulla\",\n  \"prefix\": \"ea in \",\n  \"email\": \"qui\",\n  \"title\": \"eu magna nulla Excepteur\",\n  \"phone_number\": \"et cupidatat in\",\n  \"website\": \"enim commodo ut\",\n  \"company_name\": \"pariatur occaecat mollit in\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
+                                    "body": "[\n {\n  \"name\": \"anim do nisi reprehenderit\",\n  \"first_name\": \"dolor ut cillum dolore\",\n  \"last_name\": \"Lorem esse proident\",\n  \"prefix\": \"ea labo\",\n  \"email\": \"deserunt\",\n  \"title\": \"proident deserunt\",\n  \"phone_number\": \"eiusmod non commodo\",\n  \"website\": \"est amet\",\n  \"company_name\": \"ea nulla dolor\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n },\n {\n  \"name\": \"dolor aute in\",\n  \"first_name\": \"labor\",\n  \"last_name\": \"sed culpa\",\n  \"prefix\": \"commodo proident in\",\n  \"email\": \"ipsum do in ad\",\n  \"title\": \"nostrud ullamco\",\n  \"phone_number\": \"mollit est u\",\n  \"website\": \"Duis sit tempor\",\n  \"company_name\": \"Ut\",\n  \"address\": {\n   \"line1\": \"Main street\",\n   \"city\": \"San Francisco\",\n   \"line2\": \"Bus 100\",\n   \"state\": \"CA\",\n   \"postal_code\": \"94104\",\n   \"country\": \"US\"\n  },\n  \"tags\": [\n   \"new\",\n   \"hot\"\n  ]\n }\n]",
                                     "cookie": [],
                                     "_postman_previewlanguage": "json"
                                 }
@@ -572,7 +636,7 @@
                             "event": []
                         },
                         {
-                            "id": "fa96ba1a-710a-44ac-9a13-c10205539ed0",
+                            "id": "7c679400-b53c-42d9-85fc-6f5a655a1c56",
                             "name": "Deletes a lead",
                             "request": {
                                 "name": "Deletes a lead",
@@ -589,7 +653,7 @@
                                         {
                                             "description": "Include raw response. Mostly used for debugging purposes",
                                             "key": "raw",
-                                            "value": "<boolean>"
+                                            "value": "true"
                                         }
                                     ],
                                     "variable": [
@@ -618,7 +682,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "e70715c6-efb9-4dd2-ad7f-046ed91f02e7",
+                                    "id": "fecbd1be-c49e-48a3-8c19-7c4e3b4c2826",
                                     "name": "Resource succesfully deleted",
                                     "originalRequest": {
                                         "url": {
@@ -632,7 +696,7 @@
                                             "query": [
                                                 {
                                                     "key": "raw",
-                                                    "value": "<boolean>"
+                                                    "value": "true"
                                                 }
                                             ],
                                             "variable": [
@@ -643,6 +707,14 @@
                                             ]
                                         },
                                         "header": [
+                                            {
+                                                "description": {
+                                                    "content": "Added as a part of security scheme: bearer",
+                                                    "type": "text/plain"
+                                                },
+                                                "key": "Authorization",
+                                                "value": "Bearer <token>"
+                                            },
                                             {
                                                 "description": "(Required) ID of the consumer which you want to get or push data from",
                                                 "key": "x-apideck-consumer-id",
@@ -670,7 +742,7 @@
                                     "_postman_previewlanguage": "text"
                                 },
                                 {
-                                    "id": "52cd5c09-adfb-496c-a140-6b9732eb6011",
+                                    "id": "dfd66b2b-163d-4a41-8e3e-bc5da473547d",
                                     "name": "Invalid ID supplied.",
                                     "originalRequest": {
                                         "url": {
@@ -684,7 +756,7 @@
                                             "query": [
                                                 {
                                                     "key": "raw",
-                                                    "value": "<boolean>"
+                                                    "value": "true"
                                                 }
                                             ],
                                             "variable": [
@@ -695,6 +767,14 @@
                                             ]
                                         },
                                         "header": [
+                                            {
+                                                "description": {
+                                                    "content": "Added as a part of security scheme: bearer",
+                                                    "type": "text/plain"
+                                                },
+                                                "key": "Authorization",
+                                                "value": "Bearer <token>"
+                                            },
                                             {
                                                 "description": "(Required) ID of the consumer which you want to get or push data from",
                                                 "key": "x-apideck-consumer-id",
@@ -722,7 +802,7 @@
                                     "_postman_previewlanguage": "text"
                                 },
                                 {
-                                    "id": "ce5cb8e7-a96b-4b2d-b887-9b570a21f4fc",
+                                    "id": "d178b294-b775-4009-8f6a-d7bb4ee6023e",
                                     "name": "Entity not found.",
                                     "originalRequest": {
                                         "url": {
@@ -736,7 +816,7 @@
                                             "query": [
                                                 {
                                                     "key": "raw",
-                                                    "value": "<boolean>"
+                                                    "value": "true"
                                                 }
                                             ],
                                             "variable": [
@@ -747,6 +827,14 @@
                                             ]
                                         },
                                         "header": [
+                                            {
+                                                "description": {
+                                                    "content": "Added as a part of security scheme: bearer",
+                                                    "type": "text/plain"
+                                                },
+                                                "key": "Authorization",
+                                                "value": "Bearer <token>"
+                                            },
                                             {
                                                 "description": "(Required) ID of the consumer which you want to get or push data from",
                                                 "key": "x-apideck-consumer-id",
@@ -777,7 +865,7 @@
                             "event": []
                         },
                         {
-                            "id": "c707a424-3118-4cbd-8b18-a7f68a1e5f3b",
+                            "id": "f060dc5a-1269-4eb6-adad-3b16148141c4",
                             "name": "Get lead schema",
                             "request": {
                                 "name": "Get lead schema",
@@ -818,7 +906,7 @@
                             },
                             "response": [
                                 {
-                                    "id": "bb999e4d-a687-4c6a-a62e-b8a4a8db18f6",
+                                    "id": "9faab3d9-f0f8-4324-9039-070d0c7b17b1",
                                     "name": "ok",
                                     "originalRequest": {
                                         "url": {
@@ -839,6 +927,14 @@
                                             ]
                                         },
                                         "header": [
+                                            {
+                                                "description": {
+                                                    "content": "Added as a part of security scheme: bearer",
+                                                    "type": "text/plain"
+                                                },
+                                                "key": "Authorization",
+                                                "value": "Bearer <token>"
+                                            },
                                             {
                                                 "description": "(Required) ID of the consumer which you want to get or push data from",
                                                 "key": "x-apideck-consumer-id",
@@ -861,7 +957,7 @@
                                             "value": "application/json"
                                         }
                                     ],
-                                    "body": "{\n \"data\": [\n  {\n   \"id\": \"consequat officia et magna an\",\n   \"label\": \"cillum ut non sunt\",\n   \"custom\": true,\n   \"required\": true\n  },\n  {\n   \"id\": \"sint\",\n   \"label\": \"reprehenderit dolore mollit\",\n   \"custom\": false,\n   \"required\": true\n  }\n ]\n}",
+                                    "body": "{\n \"data\": [\n  {\n   \"id\": \"in est fugiat voluptate\",\n   \"label\": \"ut ea veniam\",\n   \"custom\": true,\n   \"required\": false\n  },\n  {\n   \"id\": \"proident sit\",\n   \"label\": \"do irure deserunt\",\n   \"custom\": false,\n   \"required\": false\n  }\n ]\n}",
                                     "cookie": [],
                                     "_postman_previewlanguage": "json"
                                 }
@@ -883,8 +979,17 @@
             "value": "https://unify.apideck.com/lead"
         }
     ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "token",
+                "value": "<Bearer Token>"
+            }
+        ]
+    },
     "info": {
-        "_postman_id": "c0e0d712-7719-405d-b875-233209233872",
+        "_postman_id": "13efb70c-cd42-4085-b7ec-255770e9918f",
         "name": "Lead API",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {
